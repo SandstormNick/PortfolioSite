@@ -1,0 +1,32 @@
+body {
+	overflow-y: hidden;
+}
+
+body, html {
+	font-family: Catamaran,sans-serif;
+    height: 100%;
+	color: #fff;
+	background-image: linear-gradient(to right bottom,#3f8cff,#337ced,#276ddc,#185eca,#0050b9);
+}
+
+.container {
+	position: relative;
+	margin: 0 auto;
+	top: 30%;
+}
+
+.text-center {
+	text-align: center !important;
+}
+
+.text-rotate > .wrap {
+	border-right: 0.08em solid #fff;
+}
+
+.social-media{
+	
+}
+
+.fa-2x {
+	font-size: 2em;
+}
