@@ -1,0 +1,22 @@
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: red; //temp
+}
+
+main {
+    position: relative;
+    width: 100%;
+    padding-top: 100px;
+    background-color: blue; //temp
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    background-color: green; //temp
+}
