@@ -12,5 +12,9 @@ export const routes: Routes = [
         path: 'about',
         title: 'About',
         component: AboutComponent
+    },
+    {
+        path: '**',
+        redirectTo: '',
     }
 ];
