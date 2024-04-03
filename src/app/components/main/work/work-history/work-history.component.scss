@@ -1,3 +1,16 @@
 .work-history {
     background-color: aqua; //temp
 }
+
+.justify-row {
+    display: flex;
+    justify-content: center;
+}
+
+.placement {
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #ccc; /* Set your desired background color */
+    border-radius: 10px; /* Adjust as needed for rounded corners */
+}
