@@ -1,10 +1,5 @@
-.personal-projects {
-    background-color: darkcyan; //temp
-}
-
-.justify-row {
-    display: flex;
-    justify-content: center;
+.temp {
+    background-color: red;
 }
 
 .square {
@@ -12,4 +7,9 @@
     padding-top: 100%; /* Makes the element square */
     background-color: #ccc; /* Set your desired background color */
     border-radius: 10px; /* Adjust as needed for rounded corners */
+}
+
+.justify-row {
+    display: flex;
+    justify-content: center;
 }
