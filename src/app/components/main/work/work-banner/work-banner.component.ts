@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './work-banner.component.scss'
 })
 export class WorkBannerComponent {
-
+  closingTag: string = '</h1>'
+  openingTag: string = '<h1>'
 }
