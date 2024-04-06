@@ -7,5 +7,10 @@
             <a [routerLink]="['about']">About</a>
         </li>
         <li><a>Contact</a></li>
+        <li>
+            <input type="checkbox"
+            [checked]="isLightTheme"
+            (change)="onThemeSwitchChange()" />
+        </li>
     </ul>
 </div>
