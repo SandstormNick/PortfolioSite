@@ -6,12 +6,13 @@ span {
 
 .header {
     font-family: 'Acorn';
-    color: var(--main-content-text-color);
+    color: var(--color-text-primary);
 }
 
 .html-tag {
     font-size: 1rem;
     font-weight: bold;
+    color: var(--color-text-primary);
 }
 
 .hello-margin {
