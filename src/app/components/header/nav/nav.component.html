@@ -8,9 +8,10 @@
         </li>
         <li><a>Contact</a></li>
         <li>
-            <input type="checkbox"
-            [checked]="isLightTheme"
-            (change)="onThemeSwitchChange()" />
+            <fa-icon [icon]="faIcon" 
+                    (click)="onThemeSwitchChange()" 
+                    [title]="toolTipText">
+            </fa-icon>
         </li>
     </ul>
 </div>
