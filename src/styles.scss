@@ -7,12 +7,15 @@ a {
     color: var(--color-text-primary);
 }
 
-
 body {
     background-color: var(--background-color);
     color: var(--color-text-primary);
     margin: 0;
     font-family: 'gt';
+}
+
+.component-margin-bottom {
+    margin-bottom: var(--24px);
 }
 
 @font-face {
