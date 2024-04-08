@@ -1,10 +1,10 @@
 <div class="nav">
     <ul [ngClass]="isScrolled ? 'blur' : ''">
         <li>
-            <a [routerLink]="['/']">Work<span class="slash">/</span></a>
+            <a [routerLink]="['/']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">Work<span class="slash">/</span></a>
         </li>
         <li>
-            <a [routerLink]="['about']">About</a>
+            <a [routerLink]="['about']" [routerLinkActive]="['active']">About</a>
         </li>
         <li>
             <a>

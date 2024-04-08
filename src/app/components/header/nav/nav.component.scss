@@ -1,5 +1,10 @@
+.active {
+    background-color: var(--color-active-link);
+    border-radius: 50px;
+}
+
 .blur {
-    background: var(--color-backdrop);
+    background-color: var(--color-backdrop);
     backdrop-filter: blur(20px) saturate(1.7);
 }
 
@@ -26,9 +31,11 @@
 
 a {
     text-decoration: none;
-    margin: 0 5px 0 5px;
-    padding: 6px 20px 6px 20px;
+    margin: 0 5px;
+    padding: calc(var(--16px) - 10px) var(--20px);
     display: flex;
+    font-size: var(--font-link);
+    cursor: pointer;
 }
 
 li {

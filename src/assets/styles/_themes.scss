@@ -1,6 +1,8 @@
 [data-theme="light"] {
     --background-color: hsla(36, 31%, 90%, 1);
 
+    --color-active-link: hsla(0, 0%, 100%, .5);
+
     --color-backdrop: hsla(45, 17%, 95%, .8);
 
     --color-light-border: hsla(160, 52%, 71%, .2);
@@ -11,6 +13,8 @@
 
 [data-theme="dark"] {
     --background-color: hsla(158, 23%, 18%, 1);
+
+    --color-active-link: hsla(160, 52%, 71%, .1);
     
     --color-backdrop: hsla(158, 23%, 18%, .7);
 

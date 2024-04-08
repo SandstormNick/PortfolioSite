@@ -1,4 +1,8 @@
 :root {
     --14px: .875rem;
+    --16px: 1rem;
+    --20px: 1.25rem;
     --24px: 1.5rem;
+
+    --font-link: clamp(.875rem, .7985rem + .3265vw, 1.125rem);
 }
