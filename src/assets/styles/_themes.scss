@@ -1,13 +1,21 @@
 [data-theme="light"] {
+    --background-color: hsla(36, 31%, 90%, 1);
+
+    --color-backdrop: hsla(45, 17%, 95%, .8);
+
+    --color-light-border: hsla(160, 52%, 71%, .2);
+
     --color-text-primary: hsla(172, 95%, 18%, 1);
     //--color-text-secondary-color: 
-
-    --background-color: hsla(36, 31%, 90%, 1);
 }
 
 [data-theme="dark"] {
+    --background-color: hsla(158, 23%, 18%, 1);
+    
+    --color-backdrop: hsla(158, 23%, 18%, .7);
+
+    --color-light-border: hsla(160, 52%, 71%, .2);
+
     --color-text-primary: hsla(160, 52%, 71%, 1);
     //--color-text-secondary-color: 
-
-    --background-color: hsla(158, 23%, 18%, 1);
   }

@@ -1,17 +1,18 @@
 <div class="nav">
-    <ul>
+    <ul class="blur">
         <li>
-            <a [routerLink]="['/']">Work</a>
+            <a [routerLink]="['/']">Work<span class="slash">/</span></a>
         </li>
         <li>
             <a [routerLink]="['about']">About</a>
         </li>
-        <li><a>Contact</a></li>
         <li>
-            <fa-icon [icon]="faIcon" 
+            <a>
+                <fa-icon [icon]="faIcon" 
                     (click)="onThemeSwitchChange()" 
                     [title]="toolTipText">
-            </fa-icon>
+                </fa-icon>
+            </a>
         </li>
     </ul>
 </div>
