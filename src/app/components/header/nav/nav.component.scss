@@ -18,10 +18,10 @@
     border-radius: 6px;
     display: flex;
 
-    //make use of variables for the following:
-    width: 24px;
-    height: 24px;
-    margin-left: 5px;
+    width: var(--24px);
+    height: var(--24px);
+    margin-left: calc(var(--14px) - 8px);
+    font-size: calc(var(--14px) - 2px);
 }
 
 a {
