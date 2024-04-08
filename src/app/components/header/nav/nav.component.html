@@ -1,5 +1,5 @@
 <div class="nav">
-    <ul class="blur">
+    <ul [ngClass]="isScrolled ? 'blur' : ''">
         <li>
             <a [routerLink]="['/']">Work<span class="slash">/</span></a>
         </li>

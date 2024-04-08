@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ThemeService } from '../../../services/theme.service';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faSun } from '@fortawesome/free-regular-svg-icons';
 import { faMoon } from '@fortawesome/free-regular-svg-icons';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-nav',
   standalone: true,
-  imports: [RouterModule, FontAwesomeModule],
+  imports: [RouterModule, FontAwesomeModule, CommonModule],
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.scss'
 })
@@ -17,6 +18,7 @@ export class NavComponent implements OnInit {
   isLightTheme: boolean = true;
   faIcon = faMoon;
   toolTipText = 'Nox!';
+  isScrolled: boolean = false;
 
   constructor(private themeService: ThemeService) {}
 
@@ -26,6 +28,11 @@ export class NavComponent implements OnInit {
       this.updateTheme();
       this.updateIconAndToolTip();
     });
+  }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.isScrolled = window.scrollY > 0;
   }
 
   onThemeSwitchChange() {
