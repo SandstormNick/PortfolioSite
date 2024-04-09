@@ -12,13 +12,9 @@ h2 > .header {
 }
 
 p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 0;
     font-size: var(--font-body);
-    grid-column-start: 3;
-    grid-column-end: 24;
+    text-align: center;
 }
 
 span {
@@ -40,11 +36,6 @@ span {
 
 .hello-margin {
     margin-right: var(--80px);
-}
-
-.i-am {
-    display: grid;
-    grid-template-columns: repeat(25, 1fr);
 }
 
 .world-margin {
