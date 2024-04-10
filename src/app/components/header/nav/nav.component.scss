@@ -8,6 +8,10 @@
     backdrop-filter: blur(20px) saturate(1.7);
 }
 
+.cursor-pointer {
+    cursor: pointer;
+}
+
 .nav {
     display: flex;
     justify-content: center;
@@ -35,7 +39,6 @@ a {
     padding: calc(var(--16px) - 10px) var(--20px);
     display: flex;
     font-size: var(--font-link);
-    cursor: pointer;
 }
 
 li {
