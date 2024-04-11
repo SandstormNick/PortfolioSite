@@ -3,7 +3,7 @@
     justify-content: center;
 }
 
-.square {
+.sql-server-logo {
     width: 100%;
     padding-top: 100%;
     /* Makes the element square */
@@ -11,8 +11,38 @@
     /* Set your desired background color */
     border-radius: 10px;
     /* Adjust as needed for rounded corners */
+    background-image: url("../../../../../assets/images/sql-server-simple.png");
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 img {
-    width: 100px;
+    width: 100%;
+    /* Makes the element square */
+    background-color: #ccc;
+    /* Set your desired background color */
+    border-radius: 10px;
+}
+
+.net-logo-holder {
+    width: 100%;
+    /* Makes the element square */
+    background-color: #ccc;
+    /* Set your desired background color */
+    border-radius: 10px;
+}
+
+
+.net-logo {
+    width: 100%;
+    padding-top: 100%;
+    /* Makes the element square */
+    background-color: #ccc;
+    /* Set your desired background color */
+    border-radius: 150px;
+    /* Adjust as needed for rounded corners */
+    background-image: url("../../../../../assets/images/Microsoft_.NET_logo.svg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
