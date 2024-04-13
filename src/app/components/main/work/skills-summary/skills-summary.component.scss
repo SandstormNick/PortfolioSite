@@ -23,37 +23,3 @@ img {
     /* Set your desired background color */
     border-radius: 10px;
 }
-
-.net-logo-holder {
-    width: 100%;
-    /* Makes the element square */
-    background-color: #ccc;
-    /* Set your desired background color */
-    border-radius: 10px;
-}
-
-
-.net-logo {
-    width: 100%;
-    padding-top: 100%;
-    /* Makes the element square */
-    background-color: #ccc;
-    /* Set your desired background color */
-    border-radius: 150px;
-    /* Adjust as needed for rounded corners */
-    background-image: url("../../../../../assets/images/Microsoft_.NET_logo.svg.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.test-class {
-    background-color: #ccc;
-    height: 100%;
-    border-radius: 10px;
-}
-
-.net-test {
-    position: relative;
-    width: 80%;
-}
