@@ -3,12 +3,16 @@ h1 {
     margin-bottom: 0;
 }
 
-h1 > span > .header {
+h1>span>.header {
     font-size: var(--font-h1);
 }
 
-h2 > .header {
-    font-size: var(--font-h2);
+h2 {
+    margin-block: 0px;
+
+    .header {
+        font-size: var(--font-h2);
+    }
 }
 
 p {
@@ -21,6 +25,10 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.banner-margin-bottom {
+    margin-bottom: 3rem;
 }
 
 .header {
@@ -36,6 +44,10 @@ span {
 
 .hello-margin {
     margin-right: var(--80px);
+}
+
+.im-a {
+    margin-top: -10px;
 }
 
 .world-margin {
