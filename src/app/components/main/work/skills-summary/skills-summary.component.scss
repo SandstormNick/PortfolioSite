@@ -3,23 +3,66 @@
     justify-content: center;
 }
 
+.overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    /* Start off-screen */
+    width: 100%;
+    height: 100%;
+    background-color: var(--overlay-background-color);
+    /* 70% opaque white */
+    transition: left 0.3s ease;
+}
+
 .sql-server-logo {
     width: 100%;
     padding-top: 100%;
-    /* Makes the element square */
-    background-color: #ccc;
-    /* Set your desired background color */
+    background-color: var(--color-text-primary-50);
     border-radius: 10px;
-    /* Adjust as needed for rounded corners */
     background-image: url("../../../../../assets/images/sql-server-simple.png");
     background-position: center;
     background-repeat: no-repeat;
 }
 
+.text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: var(--color-text-primary);
+    font-size: 16px;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    /* Initially hidden */
+}
+
+
+// Image related style-----------
 img {
     width: 100%;
-    /* Makes the element square */
-    background-color: #ccc;
-    /* Set your desired background color */
+    background-color: var(--color-text-primary-50);
     border-radius: 10px;
 }
+
+.image-container {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    display: block;
+}
+
+.image-container:hover .overlay {
+    left: 0;
+}
+
+.image-container:hover .text {
+    opacity: 1;
+}
+
+// Image related style-----------
