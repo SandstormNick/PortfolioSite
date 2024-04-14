@@ -35,11 +35,11 @@ span {
 .sql-server-logo {
     width: 100%;
     padding-top: 100%;
-    background-color: var(--color-text-primary-50);
     border-radius: 10px;
     background-image: url("../../../../../assets/images/sql-server-simple.png");
     background-position: center;
     background-repeat: no-repeat;
+    filter: sepia(100%) hue-rotate(120deg) brightness(80%) saturate(320%);
 }
 
 .text {
@@ -60,8 +60,8 @@ span {
 // Image related style-----------
 img {
     width: 100%;
-    background-color: var(--color-text-primary-50);
     border-radius: 10px;
+    filter: sepia(100%) hue-rotate(120deg) brightness(80%) saturate(320%);
 }
 
 .image-container {
@@ -70,9 +70,13 @@ img {
     overflow: hidden;
 }
 
-.image-container img {
-    width: 100%;
-    display: block;
+.image-container {
+    background-color: var(--color-text-primary-50);
+
+    img {
+        width: 100%;
+        display: block;
+    }
 }
 
 .image-container:hover .overlay {
