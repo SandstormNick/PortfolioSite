@@ -49,8 +49,7 @@ span {
     right: 10px;
     text-align: justify;
     color: var(--color-text-primary);
-    font-size: var(--overlay-background-color);
-    font-weight: bold;
+    font-size: 16px;
     transition: opacity 0.3s ease;
     opacity: 0;
     /* Initially hidden */
@@ -88,3 +87,39 @@ img {
 }
 
 // Image related style-----------
+
+@media screen and (max-width: 1400px) {
+    .text {
+        font-size: 16px;
+        line-height: 16px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .text {
+        font-size: 16px;
+        line-height: 16px;
+    }
+}
+
+@media screen and (max-width: 762px) {
+    .text {
+        font-size: 14px;
+
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .text {
+        font-size: 16px;
+        line-height: var(--bs-body-line-height);
+
+    }
+}
