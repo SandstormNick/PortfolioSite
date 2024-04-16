@@ -1,5 +1,13 @@
-.work-history {
-    background-color: aqua; //temp
+.comp {
+    text-align: left;
+}
+
+.d-and-d {
+    text-align: right;
+}
+
+.ln {
+    text-align: center;
 }
 
 .justify-row {
@@ -8,9 +16,15 @@
 }
 
 .placement {
-    width: 80%;
+    width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #ccc; /* Set your desired background color */
-    border-radius: 10px; /* Adjust as needed for rounded corners */
+    background-color: var(--color-text-primary);
+    /* Set your desired background color */
+    border-radius: 10px;
+    /* Adjust as needed for rounded corners */
+}
+
+div {
+    color: var(--color-text-secondary-color);
 }
