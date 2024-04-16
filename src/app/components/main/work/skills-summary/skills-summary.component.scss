@@ -2,6 +2,11 @@ h2>.header {
     font-size: var(--font-h2);
 }
 
+p {
+    text-align: center;
+    font-size: var(--font-body);
+}
+
 span {
     display: flex;
     justify-content: center;
