@@ -1,8 +1,23 @@
-.temp {
-    background-color: aqua;
+h1 {
+    line-height: 0.8;
+    margin-bottom: 0;
+}
+
+h1>.header {
+    font-size: var(--font-h1);
+    text-align: center;
 }
 
 span {
     display: flex;
     justify-content: center;
+}
+
+.banner-margin-bottom {
+    margin-bottom: 3rem;
+}
+
+.header {
+    font-family: 'Acorn';
+    color: var(--color-text-primary);
 }
