@@ -21,3 +21,9 @@ span {
     font-family: 'Acorn';
     color: var(--color-text-primary);
 }
+
+@media screen and (min-width: 1200px) {
+    h1 {
+        padding-top: 40px
+    }
+}
