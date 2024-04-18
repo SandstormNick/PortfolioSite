@@ -3,11 +3,13 @@
     --16px: 1rem;
     --20px: 1.25rem;
     --24px: 1.5rem;
+    --48px: 3rem;
     --80px: 5rem;
     --128px: 8rem;
 
     --font-body: clamp(1rem, .8852rem + .4898vw, 1.375rem);
     --font-h1: clamp(3.2rem, .5692rem + 8.238vw, 13.75rem);
     --font-h2: clamp(1.875rem, 1.301rem + 2.449vw, 3.95rem);
+    --font-h3: clamp(1.5rem, 1.041rem + 1.95vw, 3.2rem);
     --font-link: clamp(.875rem, .7985rem + .3265vw, 1.125rem);
 }
