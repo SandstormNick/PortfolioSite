@@ -21,7 +21,7 @@ h3 {
     text-align: center;
     overflow: hidden;
     /* Hide overflow to prevent content from showing outside */
-    transition: max-height 2s, opacity 2s ease-out;
+    transition: max-height 1s ease;
     /* Transition for height */
     position: relative;
     /* Position relative for absolute positioning of hover content */
@@ -39,14 +39,9 @@ h3 {
     color: var(--color-text-secondary-color);
     border-radius: var(--24px);
     opacity: 0;
-    transition: opacity 2s ease-out;
-    transition: max-height 2s;
+    transition: opacity 1s ease;
+    transition: max-height 1s ease;
     /* Transition for opacity and height */
-}
-
-.placement:hover {
-    max-height: 1000px;
-    /* Allow max-height to grow */
 }
 
 .placement:hover .hover-content {
