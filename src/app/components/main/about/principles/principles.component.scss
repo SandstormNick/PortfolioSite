@@ -1,3 +1,10 @@
+h2 {
+    font-family: 'Acorn';
+    font-size: var(--font-h2);
+    display: flex;
+    justify-content: center;
+}
+
 h3 {
     font-family: 'Acorn';
     font-size: var(--font-h3);
@@ -5,6 +12,7 @@ h3 {
 
 p {
     text-align: justify;
+    font-size: clamp(.875rem, .7985rem + .3265vw, 1.125rem);
 }
 
 .principles-background {
