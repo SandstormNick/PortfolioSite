@@ -64,3 +64,14 @@ h3 {
     text-align: justify;
     margin: 0 20px;
 }
+
+.margin-bottom {
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 992px) {
+
+    .margin-bottom {
+        margin-bottom: 0rem;
+    }
+}
