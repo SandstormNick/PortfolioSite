@@ -1,3 +1,16 @@
-.temp {
-    background-color: violet;
+h3 {
+    font-family: 'Acorn';
+}
+
+.principles-background {
+    background-color: var(--color-text-primary-50);
+    border-radius: 10px;
+}
+
+.principle-block-left {
+    padding-left: 100px;
+}
+
+.principle-block-right {
+    padding-right: 100px;
 }
