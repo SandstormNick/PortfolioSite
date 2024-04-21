@@ -46,22 +46,21 @@ h3 {
 
 .placement:hover .hover-content {
     max-height: 1000px;
-    /* Allow max-height to grow */
     opacity: 1;
-    /* Fade in */
+}
+
+.company-name {
+    font-weight: bold;
 }
 
 .company-name,
 .position {
     text-align: left;
-    /* Left-align the h5 tags */
-    margin: 0 20px;
-    /* Add some margin for better spacing */
+    margin: 0px 20px 10px 20px;
 }
+
 
 .description {
     text-align: justify;
-    /* Justify the text in the p tag */
     margin: 0 20px;
-    /* Add some margin for better spacing */
 }
