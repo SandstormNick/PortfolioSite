@@ -1,10 +1,16 @@
 h3 {
     font-family: 'Acorn';
+    font-size: var(--font-h3);
+}
+
+p {
+    text-align: justify;
 }
 
 .principles-background {
     background-color: var(--color-text-primary-50);
     border-radius: 10px;
+    padding-top: 1rem;
 }
 
 .principle-block-left {
@@ -13,4 +19,17 @@ h3 {
 
 .principle-block-right {
     padding-right: 100px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .principle-block-left {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .principle-block-right {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
 }
