@@ -1,3 +1,14 @@
-.temp {
-    background-color: orange;
+.background {
+    background-color: var(--color-text-primary-50);
+    border-radius: 10px;
+}
+
+.p-bottom {
+    margin-bottom: 1rem;
+}
+
+p {
+    text-align: center;
+    font-size: var(--font-body);
+    margin: 1rem 1rem 0rem 1rem;
 }
