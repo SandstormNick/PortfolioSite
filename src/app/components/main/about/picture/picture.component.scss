@@ -1,12 +1,18 @@
-.temp {
-    background-color: red;
+h2 {
+    font-family: 'Acorn';
+    font-size: var(--font-h2);
+    display: flex;
+    justify-content: center;
 }
 
 .square {
     width: 100%;
-    padding-top: 100%; /* Makes the element square */
-    background-color: #ccc; /* Set your desired background color */
-    border-radius: 10px; /* Adjust as needed for rounded corners */
+    padding-top: 100%;
+    /* Makes the element square */
+    background-color: #ccc;
+    /* Set your desired background color */
+    border-radius: 10px;
+    /* Adjust as needed for rounded corners */
 }
 
 .justify-row {
