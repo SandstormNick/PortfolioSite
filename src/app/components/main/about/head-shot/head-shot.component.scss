@@ -3,6 +3,27 @@ h2 {
     font-size: var(--font-h2);
     display: flex;
     justify-content: center;
+    background-color: green;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    background-color: red;
+}
+
+.image-container {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-left: 3rem;
+    background-color: blue;
+}
+
+.header-container {
+    background-color: yellow;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 .square {
