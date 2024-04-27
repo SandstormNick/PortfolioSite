@@ -3,13 +3,17 @@ h2 {
     font-size: var(--font-h2);
     display: flex;
     justify-content: center;
-    background-color: green;
 }
 
 img {
     width: 100%;
     border-radius: 10px;
-    background-color: red;
+    background-color: red;  //Remove
+}
+
+.header-container {
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 .image-container {
@@ -17,26 +21,31 @@ img {
     border-radius: 10px;
     overflow: hidden;
     padding-left: 3rem;
-    background-color: blue;
-}
-
-.header-container {
-    background-color: yellow;
-    padding-left: 3rem;
-    padding-right: 3rem;
-}
-
-.square {
-    width: 100%;
-    padding-top: 100%;
-    /* Makes the element square */
-    background-color: #ccc;
-    /* Set your desired background color */
-    border-radius: 10px;
-    /* Adjust as needed for rounded corners */
+    background-color: blue;  //Remove
 }
 
 .justify-row {
     display: flex;
     justify-content: center;
 }
+
+@media screen and (min-width: 992px) {
+    h2 {
+        font-size: var(--font-h2-bigger);
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .header-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header-container {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+}
+
