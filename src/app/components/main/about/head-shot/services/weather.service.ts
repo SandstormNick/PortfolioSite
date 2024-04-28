@@ -8,6 +8,7 @@ import { Weather } from '../models/weather';
 })
 export class WeatherService {
     private _weather = new BehaviorSubject<Weather>(null!);
+    public readonly weather$ = this._weather.asObservable();
 
     constructor() { 
         this.fetchWeatherData();

@@ -12,29 +12,42 @@ import { Weather } from './models/weather';
 })
 export class HeadShotComponent implements OnInit {
     public weather: Weather;
-    public tempDisplay = '';
 
     constructor(private weatherService: WeatherService) { }
 
     ngOnInit(): void {
-        this.weatherService.getWeatherData().subscribe({
-            next: (weatherResponse) => {
-                this.weather = weatherResponse;
-                if (this.weather != null)
-                    this.setTempDisplay(this.roundTempartureValue(this.weather.currentTemp.temperature));
-            }
+        this.weatherService.weather$.subscribe(weather => {
+            this.weather = weather;
+            this.loadWeatherData();
         });
     }
 
-    setTempDisplay(currentTemp: string): void {
-        if (currentTemp != null && currentTemp != '') {
-            this.tempDisplay = `${currentTemp}\u00B0C`;
+    public getTempDisplay(currentTemp: number): string {
+        let tempDisplay = '';
+        tempDisplay = this.roundTempartureValue(currentTemp);
+        if (tempDisplay != null && tempDisplay != '') {
+            tempDisplay = `${tempDisplay}\u00B0C`;
         }
+
+        return tempDisplay;
     }
 
-    roundTempartureValue(temp: number): string {
+    private roundTempartureValue(temp: number): string {
         const roundedTemp = Math.round(temp);
         return roundedTemp.toString();
+    }
+
+    private loadWeatherData() {
+        if (!this.weather.isLoaded) {
+            this.weatherService.getWeatherData().subscribe({
+                next: (weatherResponse) => {
+                    this.weather = weatherResponse;
+                    if (this.weather != null) {
+                        this.weather.isLoaded = true;
+                    } 
+                }
+            });
+        }
     }
 
 }
