@@ -8,7 +8,7 @@ h2 {
 img {
     width: 100%;
     border-radius: 10px;
-    background-color: red;  //Remove
+    background-color: var(--color-text-primary-50);
 }
 
 .header-container {
@@ -20,13 +20,18 @@ img {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-    padding-left: 3rem;
-    background-color: blue;  //Remove
 }
 
 .justify-row {
     display: flex;
     justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+    img {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -46,6 +51,18 @@ img {
     .header-container {
         padding-left: 0rem;
         padding-right: 0rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .header-container {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .image-container {
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
 }
 
