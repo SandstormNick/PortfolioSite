@@ -1,3 +1,13 @@
-.temp {
-    background-color: green;
+.para-temp {
+    background-color: red;
+}
+
+.quote-temp {
+    background-color: blue;
+}
+
+p {
+    text-align: justify;
+    font-size: var(--font-body); //Can maybe drop this if the paragraph text is too big
+    margin: 1rem 1rem 0rem 1rem;
 }

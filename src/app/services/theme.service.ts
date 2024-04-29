@@ -12,7 +12,6 @@ export class ThemeService {
   }
 
   toggleTheme() {
-    console.log("HELLO");
     this._isLightTheme.next(!this._isLightTheme.value);
   }
 }
