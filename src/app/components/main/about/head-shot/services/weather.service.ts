@@ -17,8 +17,8 @@ export class WeatherService {
     private async fetchWeatherData() {
         try {
             const params = {
-                latitude: [33.55],
-                longitude: [18.25],
+                latitude: [-33.92],
+                longitude: [18.43],
                 current: 'temperature_2m,weather_code,wind_speed_10m,wind_direction_10m',
                 hourly: 'temperature_2m,precipitation',
                 daily: 'weather_code,temperature_2m_max,temperature_2m_min'
