@@ -2,9 +2,20 @@
     background-color: red;
 }
 
-.quote-temp {
-    background-color: blue;
+.author {
+    float: right;
 }
+
+.quote-block {
+    background-color: aqua; //temp
+    padding: 2rem
+}
+
+.quote-only {
+    text-align: justify;
+}
+
+
 
 p {
     text-align: justify;
