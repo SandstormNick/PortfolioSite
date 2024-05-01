@@ -11,15 +11,15 @@
     </div>
     <div class="row">
         <div class="col-lg-8">Landscape</div>
-        <div class="col-lg-4 quote-block">
+        <div class="col-lg-4 quote-block" [ngClass]="{'fade-out': quoteChanged, 'fade-in': !quoteChanged}">
             <div class="row quote-only">
                 <div class="col-12">
-                    Do not go gentle into that good night. Rage, rage against the dying of the light!
+                    {{currentQuote}}
                 </div>
             </div>
             <div class="row author">
                 <div class="col-12">
-                    Dylan Thomas
+                    {{currentAuthor}}
                 </div>
             </div>
         </div>

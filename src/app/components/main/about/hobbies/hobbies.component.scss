@@ -7,18 +7,26 @@
 }
 
 .quote-block {
-    background-color: aqua; //temp
     padding: 2rem
 }
 
 .quote-only {
     text-align: justify;
+    font-size: var(--font-body);
 }
 
+.fade-out {
+    opacity: 0;
+    transition: opacity 2s ease-in-out; // Adjust the duration and easing as needed
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 2s ease-in-out; // Adjust the duration and easing as needed
+}
 
 
 p {
     text-align: justify;
-    font-size: var(--font-body); //Can maybe drop this if the paragraph text is too big
     margin: 1rem 1rem 0rem 1rem;
 }
