@@ -16,4 +16,5 @@ export const quoteData = [
     {id: 3, quote: `Experience is one thing you can't get for nothing.`, author: `Oscar Wilde`},
     {id: 4, quote: `If you take too long to decide what to do with your life, you'll find you've done it.` },
     {id: 5, quote: `The grass is greener where you water it.`, author: `Neil Barringham`},
+    {id: 6, quote: `Show me a person who never made a mistake, and I will show you a person who never did anything.`, author: `William Rosenberg`},
 ]

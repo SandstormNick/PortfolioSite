@@ -1,7 +1,9 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Quote, quoteData } from './models/quote';
+
 import { CommonModule } from '@angular/common';
 import { interval, Subject, Subscription, takeUntil  } from 'rxjs';
+import { Photo, photoData } from './models/photo';
 
 
 @Component({
@@ -15,8 +17,11 @@ export class HobbiesComponent implements OnInit, OnDestroy {
     quoteSubscription: Subscription;
     private _onDestroy = new Subject<void>();
 
-    public quotes: Quote[];
+    public photos: Photo[];
+    public photoPortrait: Photo;
+    public photoLandscape: Photo;
 
+    public quotes: Quote[];
     quotesLength: number;
     currentQuote: string;
     currentAuthor?: string;
@@ -25,6 +30,10 @@ export class HobbiesComponent implements OnInit, OnDestroy {
     timeoutDuration = this.intervalDuration - 2000;
 
     ngOnInit(): void {
+        this.photos = photoData.map(photo => new Photo(photo.id, photo.src, photo.about, photo.isLandscape));
+        this.setPhotos();
+
+
         this.quotes = quoteData.map(quote => new Quote(quote.id, quote.quote, quote.author));
         this.quotesLength = 0;
         this.currentQuote = this.quotes[0].quote;
@@ -52,6 +61,21 @@ export class HobbiesComponent implements OnInit, OnDestroy {
 
         this.quoteChanged = false;
     }
+
+    setPhotos(): void {
+        // Filter photos based on landscape/portrait
+        const portraitPhotos = this.photos.filter(photo => !photo.isLandscape);
+        const landscapePhotos = this.photos.filter(photo => photo.isLandscape);
+
+        // Select random photo from each category
+        this.photoPortrait = this.getRandomItem(portraitPhotos);
+        this.photoLandscape = this.getRandomItem(landscapePhotos);
+    }
+
+    private getRandomItem<T>(array: T[]): T {
+        const randomIndex = Math.floor(Math.random() * array.length);
+        return array[randomIndex];
+      }
 
     ngOnDestroy(): void {
         this._onDestroy.next();
