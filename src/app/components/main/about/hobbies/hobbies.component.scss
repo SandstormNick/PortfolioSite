@@ -1,4 +1,4 @@
-.para-temp {
+.para-container {
     font-size: var(--font-body);
 }
 
@@ -52,6 +52,10 @@ p {
 @media screen and (max-width: 991px) {
     .portrait-container {
         display: none;
+    }
+
+    .para-container {
+        margin-bottom: 15px;
     }
 }
 

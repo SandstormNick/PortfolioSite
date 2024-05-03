@@ -1,13 +1,13 @@
-<div class="container">
+<div class="container component-margin-bottom">
     <div class="row">
-        <div class="col-lg-8 para-temp">
+        <div class="col-lg-7 col-xl-8 para-container d-flex align-items-center">
             <p>
                 So you two dig up, dig up dinosaurs? Must go faster. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should. You really think you can fly that thing? God help us, we're in the hands of engineers.
                 <br>
                 This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. Hey, you know how I'm, like, always trying to save the planet? Here's my chance. Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
             </p>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-5 col-xl-4">
             <div class="portrait-container">
                 <img [src]="photoPortrait.src" alt="{{photoPortrait.about}}">
             </div>
@@ -15,12 +15,12 @@
         
     </div>
     <div class="row">
-        <div class="col-lg-8">
+        <div class="col-lg-7 col-xl-8">
             <div class="landscape-container">
                 <img [src]="photoLandscape.src" alt="{{photoLandscape.about}}">
             </div>
         </div>
-        <div class="col-lg-4 quote-block d-flex align-items-center" [ngClass]="{'fade-out': quoteChanged, 'fade-in': !quoteChanged}">
+        <div class="col-lg-5 col-xl-4 quote-block d-flex align-items-center" [ngClass]="{'fade-out': quoteChanged, 'fade-in': !quoteChanged}">
             <div class="row">
                 <div class="row quote-only">
                     <div class="col-12">
