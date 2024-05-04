@@ -80,6 +80,10 @@ p {
     margin: 0rem 1rem 0rem 1rem;
 }
 
+p+p {
+    margin-top: 1rem;
+}
+
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     .landscape-container {
         height: 25rem;

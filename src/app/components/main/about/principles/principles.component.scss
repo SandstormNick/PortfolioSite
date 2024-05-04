@@ -15,6 +15,10 @@ p {
     font-size: clamp(.875rem, .7985rem + .3265vw, 1.125rem);
 }
 
+.header-container {
+    text-align: center;
+}
+
 .principles-background {
     background-color: var(--color-text-primary-50);
     border-radius: 10px;
