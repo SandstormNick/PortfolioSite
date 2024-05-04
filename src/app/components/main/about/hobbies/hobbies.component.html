@@ -10,6 +10,7 @@
         <div class="col-lg-5 col-xl-4">
             <div class="portrait-container">
                 <img [src]="photoPortrait.src" alt="{{photoPortrait.about}}">
+                <div class="portrait-description">{{photoPortrait.about}}</div>
             </div>
         </div>
         
@@ -18,6 +19,7 @@
         <div class="col-lg-7 col-xl-8">
             <div class="landscape-container">
                 <img [src]="photoLandscape.src" alt="{{photoLandscape.about}}">
+                <div class="landscape-description">{{photoLandscape.about}}</div>
             </div>
         </div>
         <div class="col-lg-5 col-xl-4 quote-block d-flex align-items-center" [ngClass]="{'fade-out': quoteChanged, 'fade-in': !quoteChanged}">
