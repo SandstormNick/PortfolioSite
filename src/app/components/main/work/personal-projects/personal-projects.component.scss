@@ -1,15 +1,201 @@
-.personal-projects {
-    background-color: darkcyan; //temp
+.row-splitter {
+    margin-bottom: 1.5rem;
 }
 
-.justify-row {
+//-----------coming-soon
+
+.coming-soon-container {
+    max-height: 550px;
+}
+
+.coming-soon-card {
+    background-color: hsla(180, 95%, 18%, 1);
+    height: 100%;
+    overflow: hidden;
+    padding: var(--42px) var(--64px);
+    border-radius: var(--64px);
+    position: relative;
+
     display: flex;
     justify-content: center;
+    align-items: center; /* Center vertically */
 }
 
-.square {
+.coming-soon-info {
+    h2 {
+        font-size: var(--font-h2);
+    }
+}
+
+//-----------coming-soon
+
+//-----------mobile
+
+.mobile-container {
+    max-height: 550px;
+}
+
+.mobile-card {
+    background-color: hsla(80, 95%, 18%, 1);
+    height: 100%;
+    overflow: hidden;
+    padding: var(--42px) var(--64px);
+    border-radius: var(--64px);
+    position: relative;
+}
+
+.mobile-info {
+    text-align: right;
+}
+
+.mobile-image {
     width: 100%;
-    padding-top: 100%; /* Makes the element square */
-    background-color: #ccc; /* Set your desired background color */
-    border-radius: 10px; /* Adjust as needed for rounded corners */
+}
+
+.mobile-image-container {
+    position: relative;
+}
+
+//-----------mobile
+
+//-----------portfolio
+
+.portfolio-container {
+    max-height: 550px;
+}
+
+.portfolio-card {
+    background-color: hsla(180, 100%, 27.25%, 1);
+    height: 100%;
+    overflow: hidden;
+    padding: var(--42px) var(--64px);
+    border-radius: var(--64px);
+    position: relative;
+}
+
+.portfolio-info {
+    text-align: right;
+}
+
+.portfolio-image {
+    width: 150%;
+}
+
+.portfolio-image-container {
+    position: relative;
+}
+
+//-----------portfolio
+
+//-----------saf1
+
+.saf1-container {
+    max-height: 550px;
+}
+
+.saf1-card {
+    background-color: hsla(172, 85%, 30%, 1);
+    height: 100%;
+    overflow: hidden;
+    padding: var(--42px) var(--64px);
+    border-radius: var(--64px);
+    position: relative;
+}
+
+.saf1-info {
+    text-align: right;
+}
+
+.saf1-image {
+    width: 150%;
+}
+
+.saf1-image-container {
+    position: relative;
+}
+
+//-----------saf1
+
+h2 {
+    color: var(--background-color);
+    font-size: var(--font-h2-smaller);
+    font-family: 'Acorn';
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1399px) {
+    .saf1-image, .portfolio-image {
+        width: 175%;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .saf1-image, .portfolio-image {
+        width: 225%;
+    }
+
+    .saf1-image-container, .portfolio-image-container {
+        left: -50px;
+    }
+
+    .mobile-card {
+        padding: var(--42px) 30px;
+    }
+
+    .mobile-info {
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .saf1-image, .portfolio-image {
+        width: 440%;
+    }
+
+    .saf1-image-container, .portfolio-image-container {
+        left: -100px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .mobile-container {
+        margin-bottom: 1.5rem;
+    }
+
+    .mobile-card {
+        padding: var(--42px) var(--64px);
+    }
+
+    .mobile-info {
+        padding-right: 0px;
+    }
+
+    .saf1-image, .portfolio-image {
+        width: 250%;
+    }
+
+    .portfolio-container {
+        margin-bottom: 1.5rem;
+    }
+
+    .coming-soon-info {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .saf1-image, .portfolio-image {
+        width: 275%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .saf1-image, .portfolio-image {
+        width: 375%;
+    }
+
+    .saf1-image-container, .portfolio-image-container {
+        left: -125px;
+    }
 }
