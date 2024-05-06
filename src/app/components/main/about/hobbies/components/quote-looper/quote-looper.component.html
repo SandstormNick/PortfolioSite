@@ -1,0 +1,14 @@
+<div [ngClass]="{'fade-out': quoteChanged, 'fade-in': !quoteChanged}" class="quote-block">
+    <div class="row">
+        <div class="row quote-only">
+            <div class="col-12">
+                {{currentQuote}}
+            </div>
+        </div>
+        <div class="row author">
+            <div class="col-12">
+                {{currentAuthor}}
+            </div>
+        </div>
+    </div>
+</div>

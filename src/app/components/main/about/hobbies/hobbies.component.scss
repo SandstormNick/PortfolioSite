@@ -1,17 +1,3 @@
-.author {
-    text-align: right;
-}
-
-.fade-out {
-    opacity: 0;
-    transition: opacity 2s ease-in-out; // Adjust the duration and easing as needed
-}
-
-.fade-in {
-    opacity: 1;
-    transition: opacity 2s ease-in-out; // Adjust the duration and easing as needed
-}
-
 .landscape-container {
     overflow: hidden;
     height: 30rem;
@@ -58,15 +44,6 @@
 
 .portrait-container:hover .portrait-description {
     opacity: 1; /* Fully visible on hover */
-}
-
-.quote-block {
-    padding: 2rem
-}
-
-.quote-only {
-    text-align: justify;
-    font-size: var(--font-body);
 }
 
 img {
