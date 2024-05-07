@@ -1,0 +1,33 @@
+[data-theme="light"] {
+    --background-color: hsla(36, 31%, 90%, 1);
+
+    --color-active-link: hsla(0, 0%, 100%, .5);
+
+    --color-backdrop: hsla(45, 17%, 95%, .8);
+
+    --color-light-border: hsla(160, 52%, 71%, .2);
+
+    --color-text-primary: hsla(172, 95%, 18%, 1);
+    --color-text-secondary-color: hsla(36, 31%, 90%, 1);
+
+    --color-text-primary-50: hsla(172, 95%, 18%, 0.5);
+
+    --overlay-background-color: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme="dark"] {
+    --background-color: hsla(158, 23%, 18%, 1);
+
+    --color-active-link: hsla(160, 52%, 71%, .1);
+
+    --color-backdrop: hsla(158, 23%, 18%, .7);
+
+    --color-light-border: hsla(160, 52%, 71%, .2);
+
+    --color-text-primary: hsla(160, 52%, 71%, 1);
+    --color-text-secondary-color: hsla(158, 23%, 18%, 1);
+
+    --color-text-primary-50: hsla(160, 52%, 71%, .5);
+
+    --overlay-background-color: rgba(0, 0, 0, 0.5);
+}
