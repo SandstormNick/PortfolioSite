@@ -128,3 +128,9 @@ img {
 
     }
 }
+
+@media screen and (max-width: 450px) {
+    .text {
+        line-height: 16px;
+    }
+}
