@@ -34,7 +34,13 @@
             </div>
         </div>
         <div class="col-lg-5 col-xl-4 d-flex align-items-center">
-            <app-quote-looper></app-quote-looper>
+            <ngx-quote-looper 
+                [inputQuotes]="quoteData" 
+                [authorCSS]="{'text-align': 'right'}" 
+                [quoteCSS]="{'text-align': 'justify', 'font-size': 'var(--font-body)'}"
+                [looperCSS]="{'padding': '2rem'}"
+                >
+            </ngx-quote-looper>
         </div>
     </div>
 </div>

@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-
 import { CommonModule } from '@angular/common';
+import { NgxQuoteLooperComponent } from 'ngx-quote-looper';
 import { Photo, photoData } from './models/photo';
-import { QuoteLooperComponent } from './components/quote-looper/quote-looper.component';
+import { quoteData } from './models/quote';
 
 
 @Component({
   selector: 'app-hobbies',
   standalone: true,
-  imports: [ CommonModule, QuoteLooperComponent ],
+  imports: [ CommonModule, NgxQuoteLooperComponent ],
   templateUrl: './hobbies.component.html',
   styleUrl: './hobbies.component.scss',
 })
@@ -17,10 +17,13 @@ export class HobbiesComponent implements OnInit {
     public photos: Photo[];
     public photoPortrait: Photo;
     public photoLandscape: Photo;
+    public quoteData: any[];
 
     ngOnInit(): void {
         this.photos = photoData.map(photo => new Photo(photo.id, photo.src, photo.about, photo.isLandscape));
         this.setPhotos();
+
+        this.quoteData = this.randomizeQuotes(quoteData);
     }
 
     setPhotos(): void {
@@ -36,6 +39,14 @@ export class HobbiesComponent implements OnInit {
     private getRandomItem<T>(array: T[]): T {
         const randomIndex = Math.floor(Math.random() * array.length);
         return array[randomIndex];
-      }
+    }
 
+    private randomizeQuotes(quoteData: any[]): any[] {
+        for (let i = quoteData.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [quoteData[i], quoteData[j]] = [quoteData[j], quoteData[i]];
+        }
+
+        return quoteData;
+    }
 }
