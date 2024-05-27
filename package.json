@@ -24,7 +24,7 @@
     "@fortawesome/free-regular-svg-icons": "^6.5.2",
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "bootstrap": "^5.3.3",
-    "ngx-quote-looper": "^0.0.1",
+    "ngx-quote-looper": "^1.1.0",
     "openmeteo": "^1.1.3",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
