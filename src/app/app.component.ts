@@ -1,18 +1,35 @@
-import { Component, HostListener } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, HostListener, OnInit } from '@angular/core';
+import { NavigationEnd, RouterOutlet } from '@angular/router';
 import { NavComponent } from './components/header/nav/nav.component';
 import { Router } from '@angular/router';
 import { FooterComponent } from './components/footer/footer.component';
+import { Title } from '@angular/platform-browser';
 
 @Component({
     selector: 'app-root',
     standalone: true,
     imports: [RouterOutlet, NavComponent, FooterComponent],
+    providers: [Title,],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss'
 })
-export class AppComponent {
-    constructor(private router: Router) { }
+export class AppComponent implements OnInit {
+    title = 'SandstormNick.github.io';
+
+    constructor(private router: Router) {}
+
+    ngOnInit() {
+        this.router.events.subscribe({
+            next: (event) => {
+                if (event instanceof NavigationEnd) {
+                    setTimeout(() => {
+                        const pageTitle = this.getPageTitle(event.url);
+                        document.title = `Nick Gibbens • ${pageTitle}`;
+                    }, 50);
+                }
+            },
+        });
+    }
 
     @HostListener('window:keydown', ['$event'])
     handleShortcut(event: KeyboardEvent): void {
@@ -21,5 +38,12 @@ export class AppComponent {
         }
     }
 
-    title = 'SandstormNick.github.io';
+    getPageTitle(url: string): string {
+        switch(url) {
+            case '/about':
+                return 'About';
+            default:
+                return 'Software Developer';
+        }
+    }
 }
