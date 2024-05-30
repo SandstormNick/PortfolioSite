@@ -9,7 +9,8 @@
         <li>
             <a>
                 <fa-icon [icon]="faIcon" class="cursor-pointer"
-                    (click)="onThemeSwitchChange()" 
+                    (click)="onThemeSwitchChange()"
+                    [attr.aria-label]="[toolTipText]" data-balloon-pos="right"
                     >
                 </fa-icon>
             </a>
