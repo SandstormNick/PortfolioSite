@@ -23,8 +23,12 @@ export class HeadShotComponent implements OnInit {
             filter<Weather>(Boolean)
         ).subscribe(weather => {
             this.weather = weather;
-            if (!this.turnOffTemp)
-                this.loadWeatherData();
+            if (!this.turnOffTemp) {
+                if (!this.weather.isLoaded)
+                    this.loadWeatherData();
+                else
+                    this.currentTemp = this.getTempDisplay(this.weather.currentTemp.temperature);
+            }
         });
     }
 
