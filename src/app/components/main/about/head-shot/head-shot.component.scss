@@ -27,13 +27,6 @@ img {
     justify-content: center;
 }
 
-@media screen and (min-width: 1200px) {
-    img {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-}
-
 @media screen and (min-width: 992px) {
     h2 {
         font-size: var(--font-h2-bigger);
