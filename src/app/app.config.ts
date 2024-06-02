@@ -1,8 +1,9 @@
-import { ApplicationConfig } from '@angular/core';
+import { ApplicationConfig, importProvidersFrom } from '@angular/core';
 import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
 import { IMAGE_CONFIG } from '@angular/common';
+import { LucideAngularModule, Sparkles } from 'lucide-angular';
 
 export const appConfig: ApplicationConfig = {
     providers: [
@@ -13,6 +14,7 @@ export const appConfig: ApplicationConfig = {
                 disableImageSizeWarning: true, 
                 disableImageLazyLoadWarning: true
             }
-        }
+        },
+        importProvidersFrom(LucideAngularModule.pick({Sparkles}))
     ]
 };

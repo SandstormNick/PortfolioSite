@@ -54,6 +54,30 @@ span {
     margin-left: var(--80px);
 }
 
+//classes for the svg icons and animation
+.icon-container {
+    position: absolute;
+}
+
+.left-icon {
+    left: 25%;
+}
+
+.right-icon {
+    right: 25%;
+}
+
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.active {
+    opacity: 1;
+}
+//classes for the svg icons and animation
+
 @media screen and (min-width: 1200px) {
     h1 {
         padding-top: 40px
@@ -65,5 +89,33 @@ span {
 
     .world-margin {
         margin-left: var(--128px);
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .left-icon {
+        left: 20%;
+    }
+    
+    .right-icon {
+        right: 20%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .left-icon {
+        left: 10%;
+    }
+    
+    .right-icon {
+        right: 10%;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .left-icon,
+    .right-icon
+    {
+        display: none;
     }
 }

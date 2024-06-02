@@ -1,12 +1,26 @@
-<div class="container banner-margin-bottom">
+<div id="work-banner-container" class="container banner-margin-bottom">
+
     <h1>
         <span class="hello-margin">
-            <span class="html-tag">{{openingTag}}</span><span class="header">Hello</span>
+            <span class="html-tag">{{openingTag}}</span>
+            <span class="header">
+                <span #LeftIconId class="icon-container left-icon fade-in">
+                    <lucide-icon name="{{ iconName }}" [size]="50"></lucide-icon>
+                </span>
+                Hello
+            </span>
         </span>
         <span class="world-margin">
-            <span class="header">World</span><span class="html-tag">{{closingTag}}</span>
+            <span class="header">
+                World
+                <span #RightIconId class="icon-container right-icon fade-in">
+                    <lucide-icon name="{{ iconName }}" [size]="50"></lucide-icon>
+                </span>
+            </span>
+            <span class="html-tag">{{closingTag}}</span>
         </span>
     </h1>
+
     <h2><span class="header">I'm Nick.</span></h2>
 
     <div class="im-a">
