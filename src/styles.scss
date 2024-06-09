@@ -27,3 +27,8 @@ body {
     font-family: 'gt';
     src: url('./assets/gt.woff');
 }
+
+::selection {
+    background: var(--color-text-primary);
+    color: var(--background-color); 
+}
