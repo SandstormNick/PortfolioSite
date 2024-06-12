@@ -1,3 +1,15 @@
+a .mobile-image, 
+a .saf1-image,
+a .portfolio-image {
+    transition: transform 0.5s ease;
+}
+
+a:hover .mobile-image, 
+a:hover .saf1-image,
+a:hover .portfolio-image {
+    transform: translateY(5px);
+}
+
 .header-container {
     text-align: center;
 
@@ -28,6 +40,7 @@
     padding: var(--42px) var(--64px);
     border-radius: var(--64px);
     position: relative;
+    transition: box-shadow 0.5s ease;
 
     display: flex;
     justify-content: center;
@@ -55,6 +68,14 @@
     padding: var(--42px) var(--64px);
     border-radius: var(--64px);
     position: relative;
+    transition: box-shadow 0.5s ease;
+}
+
+.coming-soon-card:hover,
+.mobile-card:hover,
+.portfolio-card:hover,
+.saf1-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
 
 .mobile-info {
@@ -84,6 +105,7 @@
     padding: var(--42px) var(--64px);
     border-radius: var(--64px);
     position: relative;
+    transition: box-shadow 0.5s ease;
 }
 
 .portfolio-info {
@@ -113,6 +135,7 @@
     padding: var(--42px) var(--64px);
     border-radius: var(--64px);
     position: relative;
+    transition: box-shadow 0.5s ease;
 }
 
 .saf1-info {
@@ -200,6 +223,21 @@ h2 {
 @media screen and (max-width: 575px) {
     .saf1-image, .portfolio-image {
         width: 275%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    a:hover .mobile-image, 
+    a:hover .saf1-image,
+    a:hover .portfolio-image {
+        transform: none;
+    }
+
+    .coming-soon-card:hover,
+    .mobile-card:hover,
+    .portfolio-card:hover,
+    .saf1-card:hover {
+        box-shadow: none;
     }
 }
 
