@@ -26,14 +26,15 @@ export class CanvasComponent implements AfterViewInit {
         const height = this.canvas.nativeElement.height;
 
         // Create a linear gradient
-        const gradient = this.ctx.createLinearGradient(0, 0, width, height);
+        const gradient = this.ctx.createLinearGradient(0, 0, 0, height);
 
         // Define gradient colors
         gradient.addColorStop(0, 'darkgreen');
-        gradient.addColorStop(0.25, 'green');
-        gradient.addColorStop(0.5, 'lightgreen');
-        gradient.addColorStop(0.75, 'palegreen');
-        gradient.addColorStop(1, 'greenyellow');
+        gradient.addColorStop(0.15, 'green');
+        gradient.addColorStop(0.3, 'greenyellow');
+        gradient.addColorStop(0.45, 'lightgreen');
+        gradient.addColorStop(0.7, 'palegreen');
+        gradient.addColorStop(1, 'hsla(36, 31%, 90%, 1)'); // Add the site background color
 
         // Apply the gradient as fill style
         this.ctx.fillStyle = gradient;
