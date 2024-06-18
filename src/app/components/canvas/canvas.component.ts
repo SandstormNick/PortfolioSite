@@ -1,4 +1,5 @@
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { ThemeService } from '../../services/theme.service';
 
 @Component({
   selector: 'app-canvas',
@@ -7,10 +8,21 @@ import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
   templateUrl: './canvas.component.html',
   styleUrl: './canvas.component.scss'
 })
-export class CanvasComponent implements AfterViewInit {
+export class CanvasComponent implements OnInit, AfterViewInit {
+    isLightTheme = true;
+
     @ViewChild('canvasHero', {static: false}) canvas: ElementRef<HTMLCanvasElement>;
 
     private ctx: CanvasRenderingContext2D;
+
+    constructor(private themeService: ThemeService) {}
+
+    ngOnInit(): void {
+        this.themeService.isLightTheme.subscribe(isLight => {
+            this.isLightTheme = isLight;
+            this.drawGradient();
+          });
+    }
 
     ngAfterViewInit(): void {
         const canvasEl: HTMLCanvasElement = this.canvas.nativeElement;
@@ -29,12 +41,22 @@ export class CanvasComponent implements AfterViewInit {
         const gradient = this.ctx.createLinearGradient(0, 0, 0, height);
 
         // Define gradient colors
-        gradient.addColorStop(0, 'darkgreen');
-        gradient.addColorStop(0.15, 'green');
-        gradient.addColorStop(0.3, 'greenyellow');
-        gradient.addColorStop(0.45, 'lightgreen');
-        gradient.addColorStop(0.7, 'palegreen');
-        gradient.addColorStop(1, 'hsla(36, 31%, 90%, 1)'); // Add the site background color
+        if (this.isLightTheme) {
+            gradient.addColorStop(0, 'darkgreen');
+            gradient.addColorStop(0.15, 'green');
+            gradient.addColorStop(0.3, 'greenyellow');
+            gradient.addColorStop(0.45, 'lightgreen');
+            gradient.addColorStop(0.7, 'palegreen');
+            gradient.addColorStop(1, 'hsla(36, 31%, 90%, 1)'); // Add the site background color
+        } else {
+            // Define dark theme gradient colors
+            gradient.addColorStop(0, 'darkolivegreen');
+            gradient.addColorStop(0.15, 'olivedrab');
+            gradient.addColorStop(0.3, 'yellowgreen');
+            gradient.addColorStop(0.45, 'mediumseagreen');
+            gradient.addColorStop(0.7, 'seagreen');
+            gradient.addColorStop(1, 'hsla(158, 23%, 18%, 1)'); // Site background color for dark theme
+        }
 
         // Apply the gradient as fill style
         this.ctx.fillStyle = gradient;
