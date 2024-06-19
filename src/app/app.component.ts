@@ -4,11 +4,12 @@ import { NavComponent } from './components/header/nav/nav.component';
 import { Router } from '@angular/router';
 import { FooterComponent } from './components/footer/footer.component';
 import { Title } from '@angular/platform-browser';
+import { CanvasComponent } from './components/canvas/canvas.component';
 
 @Component({
     selector: 'app-root',
     standalone: true,
-    imports: [RouterOutlet, NavComponent, FooterComponent],
+    imports: [RouterOutlet, NavComponent, FooterComponent, CanvasComponent],
     providers: [Title,],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss'
