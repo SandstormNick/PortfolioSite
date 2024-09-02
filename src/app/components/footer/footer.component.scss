@@ -25,35 +25,25 @@
     margin: 0px 3px;
 }
 
-.contact-links {
+.contact-links, .extra-links {
     font-size: var(--font-footer);
     display: flex;
     justify-content: center;
     margin-top: 10px
 }
 
-.ghub {
+.ghub, .linked, .tracker {
     font-size: var(--font-fa);
     display: flex;
     justify-content: center;
 }
 
-.ghub-icon:hover {
-    color: var(--color-text-secondary-color);
-}
-
-.linked {
-    font-size: var(--font-fa);
-    display: flex;
-    justify-content: center;
-}
-
-.linked-icon:hover {
+.ghub-icon:hover, .linked-icon:hover, .tracker-icon:hover {
     color: var(--color-text-secondary-color);
 }
 
 @media screen and (min-width: 576px) {
-    .contact-links {
+    .contact-links, .extra-links {
         margin-top: 0rem;
     }
 }
