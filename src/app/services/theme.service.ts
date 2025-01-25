@@ -7,6 +7,14 @@ import { BehaviorSubject } from 'rxjs';
 export class ThemeService {
   private _isLightTheme = new BehaviorSubject<boolean>(true);
 
+  constructor() {
+    const darkModeOn = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (darkModeOn) {
+      this._isLightTheme.next(false);
+    }
+  }  
+
   get isLightTheme() {
     return this._isLightTheme.asObservable();
   }
