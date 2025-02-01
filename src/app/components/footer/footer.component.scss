@@ -32,13 +32,13 @@
     margin-top: 10px
 }
 
-.ghub, .linked, .tracker {
+.ghub, .linked, .tracker, .streak-builder {
     font-size: var(--font-fa);
     display: flex;
     justify-content: center;
 }
 
-.ghub-icon:hover, .linked-icon:hover, .tracker-icon:hover {
+.ghub-icon:hover, .linked-icon:hover, .tracker-icon:hover, .streak-builder-icon:hover {
     color: var(--color-text-secondary-color);
 }
 
