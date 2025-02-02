@@ -18,6 +18,9 @@ export class FooterComponent {
     faChartSimple = faChartSimple;
     faEllipsis = faEllipsis;
 
+    trackerTooltip = 'Tracker';
+    streakBuilderTooltip = 'Streak Builder';
+
     githubLink = 'https://github.com/SandstormNick';
     linkedLink = 'https://www.linkedin.com/in/nicholas-gibbens-10b191174/';
     trackerLink = 'https://wonderful-sand-0119aa41e.5.azurestaticapps.net/';

@@ -1,3 +1,5 @@
+@import '../../../assets/styles/balloon';
+
 .footer-background {
     background-color: var(--color-text-primary-50);
     border-radius: 10px;
@@ -53,4 +55,11 @@
     .come-back-soon {
         text-align: center;
     }
+}
+
+//Style for tracker and streak builder tool tips
+[aria-label][data-balloon-pos="right"]:after {
+    color: var(--color-text-primary);
+    font-size: var(--font-footer);
+    left: calc(100% + 10px);
 }

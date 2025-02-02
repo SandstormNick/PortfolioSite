@@ -17,7 +17,7 @@ import { CommonModule } from '@angular/common';
 export class NavComponent implements OnInit {
   isLightTheme: boolean = true;
   faIcon = faMoon;
-  toolTipText = 'Nox!'; //revist this at a later stage
+  toolTipText = 'Nox!';
   isScrolled: boolean = false;
 
   constructor(private themeService: ThemeService) {}

@@ -31,10 +31,14 @@
                 <div class="col-12 col-sm-6">
                     <div class="extra-links">And here:</div>
                     <div class="tracker">
-                        <a href="{{trackerLink}}" target="_blank"><fa-icon class="tracker-icon" [icon]="faChartSimple"></fa-icon></a>
+                        <a href="{{trackerLink}}" target="_blank">
+                            <fa-icon class="tracker-icon" [icon]="faChartSimple" [attr.aria-label]="[trackerTooltip]" data-balloon-pos="right"></fa-icon>
+                        </a>
                     </div>
                     <div class="streak-builder">
-                        <a href="{{streakBuilderLink}}" target="_blank"><fa-icon class="streak-builder-icon" [icon]="faEllipsis"></fa-icon></a>
+                        <a href="{{streakBuilderLink}}" target="_blank">
+                            <fa-icon class="streak-builder-icon" [icon]="faEllipsis" [attr.aria-label]="[streakBuilderTooltip]" data-balloon-pos="right"></fa-icon>
+                        </a>
                     </div>
                 </div>
             </div>
