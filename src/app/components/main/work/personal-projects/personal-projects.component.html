@@ -16,14 +16,21 @@
                 </div>
             </a>
         </div>
-        <div class="col-12 col-sm-12 col-md-6 col-lg-7 col-lg-7 saf1-container">
-            <a href="https://saf1blogs.com/" target="_blank">
-                <div class="saf1-card">
-                    <div class="saf1-info">
-                        <h2>SAF1 Blog</h2>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-7 col-lg-7 npm-container">
+            <a href="https://www.npmjs.com/package/ngx-quote-looper" target="_blank">
+                <div class="npm-card">
+                    <div class="npm-info">
+                        <h2>NPM Package</h2>
                     </div>
-                    <div class="saf1-image-container">
-                        <img src="../../../../../assets/images/saf1_image.png" alt="" class="saf1-image">
+                    <p>A package used to display quotes in a stylish way.</p>
+                    <div class="npm-package-container">
+                        <ngx-quote-looper 
+                            [inputQuotes]="quoteData" 
+                            [authorCSS]="{'text-align': 'right'}" 
+                            [quoteCSS]="{'text-align': 'justify', 'font-size': 'var(--font-h3-smaller)'}"
+                            [randomize]="true"
+                            >
+                        </ngx-quote-looper>
                     </div>
                 </div>
             </a>
