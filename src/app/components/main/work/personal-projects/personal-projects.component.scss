@@ -1,13 +1,15 @@
 a .mobile-image, 
-a .saf1-image,
 a .portfolio-image {
     transition: transform 0.5s ease;
 }
 
 a:hover .mobile-image, 
-a:hover .saf1-image,
 a:hover .portfolio-image {
     transform: translateY(5px);
+}
+
+p {
+    font-size: var(--font-body);
 }
 
 .header-container {
@@ -74,7 +76,7 @@ a:hover .portfolio-image {
 .coming-soon-card:hover,
 .mobile-card:hover,
 .portfolio-card:hover,
-.saf1-card:hover {
+.npm-card:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
 
@@ -122,13 +124,13 @@ a:hover .portfolio-image {
 
 //-----------portfolio
 
-//-----------saf1
+//-----------npm
 
-.saf1-container {
+.npm-container {
     max-height: 550px;
 }
 
-.saf1-card {
+.npm-card {
     background-color: hsla(172, 85%, 30%, 1);
     height: 100%;
     overflow: hidden;
@@ -138,19 +140,11 @@ a:hover .portfolio-image {
     transition: box-shadow 0.5s ease;
 }
 
-.saf1-info {
+.npm-info {
     text-align: right;
 }
 
-.saf1-image {
-    width: 150%;
-}
-
-.saf1-image-container {
-    position: relative;
-}
-
-//-----------saf1
+//-----------npm
 
 h2 {
     color: var(--background-color);
@@ -160,17 +154,17 @@ h2 {
 }
 
 @media screen and (max-width: 1399px) {
-    .saf1-image, .portfolio-image {
+    .portfolio-image {
         width: 175%;
     }
 }
 
 @media screen and (max-width: 1199px) {
-    .saf1-image, .portfolio-image {
+    .portfolio-image {
         width: 225%;
     }
 
-    .saf1-image-container, .portfolio-image-container {
+    .portfolio-image-container {
         left: -50px;
     }
 
@@ -184,11 +178,11 @@ h2 {
 }
 
 @media screen and (max-width: 991px) {
-    .saf1-image, .portfolio-image {
+    .portfolio-image {
         width: 440%;
     }
 
-    .saf1-image-container, .portfolio-image-container {
+    .portfolio-image-container {
         left: -100px;
     }
 }
@@ -206,7 +200,7 @@ h2 {
         padding-right: 0px;
     }
 
-    .saf1-image, .portfolio-image {
+    .portfolio-image {
         width: 250%;
     }
 
@@ -221,14 +215,13 @@ h2 {
 }
 
 @media screen and (max-width: 575px) {
-    .saf1-image, .portfolio-image {
+    .portfolio-image {
         width: 275%;
     }
 }
 
 @media screen and (max-width: 500px) {
     a:hover .mobile-image, 
-    a:hover .saf1-image,
     a:hover .portfolio-image {
         transform: none;
     }
@@ -236,17 +229,17 @@ h2 {
     .coming-soon-card:hover,
     .mobile-card:hover,
     .portfolio-card:hover,
-    .saf1-card:hover {
+    .npm-card:hover {
         box-shadow: none;
     }
 }
 
 @media screen and (max-width: 450px) {
-    .saf1-image, .portfolio-image {
+    .portfolio-image {
         width: 375%;
     }
 
-    .saf1-image-container, .portfolio-image-container {
+    .portfolio-image-container {
         left: -125px;
     }
 }
