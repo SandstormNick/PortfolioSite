@@ -25,4 +25,8 @@ export class FooterComponent {
     linkedLink = 'https://www.linkedin.com/in/nicholas-gibbens-10b191174/';
     trackerLink = 'https://wonderful-sand-0119aa41e.5.azurestaticapps.net/';
     streakBuilderLink = 'https://zealous-tree-090df3810.4.azurestaticapps.net/';
+
+    getCurrentYear(): number {
+        return new Date().getFullYear();
+    }
 }
