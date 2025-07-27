@@ -20,7 +20,11 @@
         </div>
         <div class="col-lg-5 col-xl-4">
             <div class="portrait-container">
-                <img [src]="photoPortrait.src" loading="lazy" alt="{{photoPortrait.about}}">
+                <picture>
+                    <source [srcset]="photoPortrait.srcAvif" type="image/avif">
+                    <source [srcset]="photoPortrait.srcWebp" type="image/webp">
+                    <img [src]="photoPortrait.src" loading="lazy" alt="{{photoPortrait.about}}">
+                </picture>
                 <div class="portrait-description">{{photoPortrait.about}}</div>
             </div>
         </div>
@@ -29,7 +33,11 @@
     <div class="row">
         <div class="col-lg-7 col-xl-8">
             <div class="landscape-container">
-                <img [src]="photoLandscape.src" loading="lazy" alt="{{photoLandscape.about}}">
+                <picture>
+                    <source [srcset]="photoLandscape.srcAvif" type="image/avif">
+                    <source [srcset]="photoLandscape.srcWebp" type="image/webp">
+                    <img [src]="photoLandscape.src" loading="lazy" alt="{{photoLandscape.about}}">
+                </picture>
                 <div class="landscape-description">{{photoLandscape.about}}</div>
             </div>
         </div>
