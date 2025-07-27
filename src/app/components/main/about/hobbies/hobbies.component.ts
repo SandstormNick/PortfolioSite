@@ -20,7 +20,7 @@ export class HobbiesComponent implements OnInit {
     public quoteData: any[];
 
     ngOnInit(): void {
-        this.photos = photoData.map(photo => new Photo(photo.id, photo.src, photo.about, photo.isLandscape));
+        this.photos = photoData.map(photo => new Photo(photo.id, photo.src, photo.srcAvif, photo.srcWebp, photo.about, photo.isLandscape));
         this.setPhotos();
 
         this.quoteData = quoteData;
