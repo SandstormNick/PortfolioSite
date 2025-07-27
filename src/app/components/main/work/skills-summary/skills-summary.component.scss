@@ -41,7 +41,11 @@ span {
     width: 100%;
     padding-top: 100%;
     border-radius: 10px;
-    background-image: url("../../../../../assets/images/sql-server-simple.png");
+    background-image: image-set(
+        url("../../../../../assets/images/sql-server-simple.avif") type("image/avif")
+        url("../../../../../assets/images/sql-server-simple.webp") type("image/webp")
+        url("../../../../../assets/images/sql-server-simple.png") type("image/png")
+    );
     background-position: center;
     background-repeat: no-repeat;
     filter: sepia(100%) hue-rotate(120deg) brightness(80%) saturate(320%);
