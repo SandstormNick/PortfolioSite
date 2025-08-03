@@ -1,3 +1,5 @@
+import { environment } from "../../../../../../environments/environment";
+
 export class Photo {
     id: number;
     src: string;
@@ -16,7 +18,7 @@ export class Photo {
     }
 }
 
-const pathToPhotos = '../../../../../assets/images/photos/';
+const pathToPhotos = environment.imageBaseUrl +'photos/';
 
 
 export const photoData = [

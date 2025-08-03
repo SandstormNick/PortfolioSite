@@ -12,9 +12,9 @@
                     </div>
                     <div class="mobile-image-container">
                         <picture>
-                            <source srcset="../../../../../assets/images/mobile_image.avif" type="image/avif">
-                            <source srcset="../../../../../assets/images/mobile_image.webp" type="image/webp">
-                            <img src="../../../../../assets/images/mobile_image.png" loading="lazy" alt="" class="mobile-image">
+                            <source [srcset]="baseImageUrl + 'mobile_image.avif'" type="image/avif">
+                            <source [srcset]="baseImageUrl + 'mobile_image.webp'" type="image/webp">
+                            <img [src]="baseImageUrl + 'mobile_image.png'" loading="lazy" alt="" class="mobile-image">
                         </picture>
                     </div>
                 </div>
@@ -49,9 +49,9 @@
                     </div>
                     <div class="portfolio-image-container">
                         <picture>
-                            <source srcset="../../../../../assets/images/portfolio_image.avif" type="image/avif">
-                            <source srcset="../../../../../assets/images/portfolio_image.webp" type="image/webp">
-                            <img src="../../../../../assets/images/portfolio_image.png" loading="lazy" alt="" class="portfolio-image">
+                            <source [srcset]="baseImageUrl + 'portfolio_image.avif'" type="image/avif">
+                            <source [srcset]="baseImageUrl + 'portfolio_image.webp'" type="image/webp">
+                            <img [src]="baseImageUrl + 'portfolio_image.png'" loading="lazy" alt="" class="portfolio-image">
                         </picture>
                     </div>
                 </div>

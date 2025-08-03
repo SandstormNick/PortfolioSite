@@ -3,6 +3,7 @@ import { WeatherService } from './services/weather.service';
 import { CommonModule } from '@angular/common';
 import { Weather } from './models/weather';
 import { filter } from 'rxjs';
+import { environment } from '../../../../../environments/environment';
 
 @Component({
   selector: 'app-head-shot',
@@ -12,6 +13,7 @@ import { filter } from 'rxjs';
   styleUrl: './head-shot.component.scss'
 })
 export class HeadShotComponent implements OnInit {
+    baseImageUrl = environment.imageBaseUrl;
     public weather: Weather;
     public turnOffTemp: boolean = false;
     public currentTemp = '';
