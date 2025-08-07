@@ -29,5 +29,11 @@ export const photoData = [
     {id: 5, src: `${pathToPhotos}newlands.jpg`, srcAvif: `${pathToPhotos}newlands.avif`, srcWebp: `${pathToPhotos}newlands.webp`, about: `Newlands, Cape Town`, isLandscape: true},
     {id: 6, src: `${pathToPhotos}seapoint.jpg`, srcAvif: `${pathToPhotos}seapoint.avif`, srcWebp: `${pathToPhotos}seapoint.webp`, about: `Sea Point, Cape Town`, isLandscape: false},
     {id: 7, src: `${pathToPhotos}simons_town.jpg`, srcAvif: `${pathToPhotos}simons_town.avif`, srcWebp: `${pathToPhotos}simons_town.webp`, about: `Simon's Town, Cape Town`, isLandscape: true},
-    {id: 8, src: `${pathToPhotos}table_mountain.jpg`, srcAvif: `${pathToPhotos}table_mountain.avif`, srcWebp: `${pathToPhotos}table_mountain.webp`, about: `Table Mountain, Cape Town`, isLandscape: true}
+    {id: 8, src: `${pathToPhotos}table_mountain.jpg`, srcAvif: `${pathToPhotos}table_mountain.avif`, srcWebp: `${pathToPhotos}table_mountain.webp`, about: `Table Mountain, Cape Town`, isLandscape: true},
+    {id: 9, src: `${pathToPhotos}AmstelRiver.jpg`, srcAvif: `${pathToPhotos}AmstelRiver.avif`, srcWebp: `${pathToPhotos}AmstelRiver.webp`, about: `Amstel River, Amsterdam`, isLandscape: true},
+    {id: 10, src: `${pathToPhotos}Atomium.jpg`, srcAvif: `${pathToPhotos}Atomium.avif`, srcWebp: `${pathToPhotos}Atomium.webp`, about: `Atomium, Brussels`, isLandscape: false},
+    {id: 11, src: `${pathToPhotos}CanalHouses.jpg`, srcAvif: `${pathToPhotos}CanalHouses.avif`, srcWebp: `${pathToPhotos}CanalHouses.webp`, about: `Canal Houses, Amsterdam`, isLandscape: true},
+    {id: 12, src: `${pathToPhotos}Rozenhoedkaai.jpg`, srcAvif: `${pathToPhotos}Rozenhoedkaai.avif`, srcWebp: `${pathToPhotos}Rozenhoedkaai.webp`, about: `Rozenhoedkaai, Bruges`, isLandscape: true},
+    {id: 13, src: `${pathToPhotos}Sacred%20Heart.jpg`, srcAvif: `${pathToPhotos}Sacred%20Heart.avif`, srcWebp: `${pathToPhotos}Sacred%20Heart.webp`, about: `Basilica of the Sacred Heart, Brussels`, isLandscape: false},
+    {id: 10, src: `${pathToPhotos}SaintNick.jpg`, srcAvif: `${pathToPhotos}SaintNick.avif`, srcWebp: `${pathToPhotos}SaintNick.webp`, about: `Basilica of Saint Nicholas, Amsterdam`, isLandscape: false}
 ]
