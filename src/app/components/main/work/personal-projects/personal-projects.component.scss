@@ -1,10 +1,12 @@
 a .mobile-image, 
-a .portfolio-image {
+a .portfolio-image,
+a .blog-image {
     transition: transform 0.5s ease;
 }
 
 a:hover .mobile-image, 
-a:hover .portfolio-image {
+a:hover .portfolio-image,
+a:hover .blog-image {
     transform: translateY(5px);
 }
 
@@ -29,13 +31,13 @@ p {
     margin-bottom: 1.5rem;
 }
 
-//-----------coming-soon
+//-----------blog
 
-.coming-soon-container {
+.blog-container {
     max-height: 550px;
 }
 
-.coming-soon-card {
+.blog-card {
     background-color: hsla(180, 95%, 18%, 1);
     height: 100%;
     overflow: hidden;
@@ -43,19 +45,21 @@ p {
     border-radius: var(--64px);
     position: relative;
     transition: box-shadow 0.5s ease;
-
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Center vertically */
 }
 
-.coming-soon-info {
-    h2 {
-        font-size: var(--font-h2);
-    }
+.blog-info {
+    text-align: right;
 }
 
-//-----------coming-soon
+.blog-image {
+    width: 150%;
+}
+
+.blog-image-container {
+    position: relative;
+}
+
+//-----------blog
 
 //-----------mobile
 
@@ -73,7 +77,7 @@ p {
     transition: box-shadow 0.5s ease;
 }
 
-.coming-soon-card:hover,
+.blog-card:hover,
 .mobile-card:hover,
 .portfolio-card:hover,
 .npm-card:hover {
@@ -154,17 +158,20 @@ h2 {
 }
 
 @media screen and (max-width: 1399px) {
-    .portfolio-image {
+    .portfolio-image,
+    .blog-image {
         width: 175%;
     }
 }
 
 @media screen and (max-width: 1199px) {
-    .portfolio-image {
+    .portfolio-image,
+    .blog-image {
         width: 225%;
     }
 
-    .portfolio-image-container {
+    .portfolio-image-container,
+    .blog-image-container {
         left: -50px;
     }
 
@@ -178,11 +185,13 @@ h2 {
 }
 
 @media screen and (max-width: 991px) {
-    .portfolio-image {
+    .portfolio-image,
+    .blog-image {
         width: 440%;
     }
 
-    .portfolio-image-container {
+    .portfolio-image-container,
+    .blog-image-container {
         left: -100px;
     }
 }
@@ -200,7 +209,8 @@ h2 {
         padding-right: 0px;
     }
 
-    .portfolio-image {
+    .portfolio-image,
+    .blog-image {
         width: 250%;
     }
 
@@ -208,25 +218,27 @@ h2 {
         margin-bottom: 1.5rem;
     }
 
-    .coming-soon-info {
+    .blog-info {
         margin-top: 50px;
         margin-bottom: 50px;
     }
 }
 
 @media screen and (max-width: 575px) {
-    .portfolio-image {
+    .portfolio-image,
+    .blog-image {
         width: 275%;
     }
 }
 
 @media screen and (max-width: 500px) {
     a:hover .mobile-image, 
-    a:hover .portfolio-image {
+    a:hover .portfolio-image,
+    a:hover .blog-image {
         transform: none;
     }
 
-    .coming-soon-card:hover,
+    .blog-card:hover,
     .mobile-card:hover,
     .portfolio-card:hover,
     .npm-card:hover {
@@ -235,11 +247,13 @@ h2 {
 }
 
 @media screen and (max-width: 450px) {
-    .portfolio-image {
+    .portfolio-image,
+    .blog-image {
         width: 375%;
     }
 
-    .portfolio-image-container {
+    .portfolio-image-container,
+    .blog-image-container {
         left: -125px;
     }
 }
