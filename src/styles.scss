@@ -2,6 +2,12 @@
 @import "./assets/styles/themes";
 @import "./assets/styles/sizes";
 
+// Prevent horizontal scroll
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
 a {
     text-decoration: none;
     color: var(--color-text-primary);
