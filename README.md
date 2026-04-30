@@ -1,27 +1,60 @@
-# SandstormNickGithubIo
+# Portfolio Site
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
+A personal portfolio website built with Angular 17, showcasing work and an about page. The site is continuously deployed to [Azure Static Web Apps](https://azure.microsoft.com/en-us/products/app-service/static).
 
-## Development server
+## Overview
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This repository contains the source code for [SandstormNick's](https://github.com/SandstormNick) portfolio site. It features:
 
-## Code scaffolding
+- **Work** – A showcase of projects and work samples.
+- **About** – A personal bio and background.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Tech Stack
 
-## Build
+| Technology | Purpose |
+|---|---|
+| [Angular 17](https://angular.io/) | Frontend framework |
+| [Bootstrap 5](https://getbootstrap.com/) | Responsive styling |
+| [Font Awesome](https://fontawesome.com/) | Icons |
+| [Lucide Angular](https://lucide.dev/) | Additional icons |
+| [Open-Meteo](https://open-meteo.com/) | Weather data |
+| [Azure Static Web Apps](https://azure.microsoft.com/en-us/products/app-service/static) | Hosting & CI/CD |
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Getting Started
 
-## Running unit tests
+### Prerequisites
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- [Node.js](https://nodejs.org/) >= 20
+- [Angular CLI](https://github.com/angular/angular-cli) v17
 
-## Running end-to-end tests
+### Install dependencies
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+npm install
+```
 
-## Further help
+### Run locally
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+npm start
+```
+
+Navigate to `http://localhost:4200/`. The app will automatically reload when source files change.
+
+### Build
+
+```bash
+npm run build
+```
+
+Build artifacts are output to the `dist/` directory.
+
+### Run unit tests
+
+```bash
+npm test
+```
+
+## Deployment
+
+Pushes to the `master` branch are automatically built and deployed to Azure Static Web Apps via the GitHub Actions workflow defined in `.github/workflows/`.
